@@ -16,9 +16,6 @@ margin-bottom: 0;
 a[href$=".pdf"]{
 	background-image: url("../images/pdf.png");
 }
-a[href$=".doc"]{
-	background-image: url("../images/doc.png");
-}
 a[href$=".xls"]{
 	background-image: url("../images/xls.png");
 }
@@ -54,16 +51,4 @@ a[href$=".avi"]{
 }
 a[href$=".tiff"]{
 	background-image: url("../images/tiff.png");
-}
-a[href$=".ai"]{
-	background-image: url("../images/ai.png");
-}
-a[href$=".js"]{
-	background-image: url("../images/js.png");
-}
-a[href$=".flac"]{
-	background-image: url("../images/flac.png");
-}
-a[href$=".aac"]{
-	background-image: url("../images/aac.png");
 }
