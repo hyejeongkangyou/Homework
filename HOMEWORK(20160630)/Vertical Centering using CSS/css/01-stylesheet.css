@@ -1,0 +1,25 @@
+.text, .image, .block{
+	width:14em;
+	height:8em;
+	margin:0.5em;
+	border:thick solid;
+	background:#fff;
+}
+.text{
+	border-color:#99f;
+}
+
+.image{
+	border-color:#f99;
+}
+.image img{
+	width:50px;
+	height:50px;
+}
+.block{
+	color:#ff4;
+}
+.block div{
+	border:dashed;
+	width:10em;
+}
