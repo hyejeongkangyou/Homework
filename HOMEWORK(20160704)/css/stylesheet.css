@@ -1,0 +1,75 @@
+body{
+	margin:0;
+}
+
+.speakers-container{
+	width:900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.speaker-container *{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.speaker-photo{
+	float:left;
+	width:50%;
+	height:auto;
+}
+
+.speaker{
+	float:left;
+	width:100%;
+	text-align:center;
+	font-color:#464646;
+}
+
+.speaker:hover{
+	background: ##fff2e2;
+}
+
+.speaker-bio{
+	/*overflow:hidden;*/
+}
+
+.speaker-name{
+	font-family:"Montserrat";
+	font-size:19px;
+	line-height:1.1;
+	margin-top:3.44em
+	margin-bottom: 1.13em;
+}
+
+.speaker-desc{
+	padding-left:1.88em
+	padding-right: 1.88em;
+
+}
+
+.speaker-desc::after{
+	display:block;
+	content:'';
+	height:1px;
+	width:3em;
+	background: #464646;
+	margin:0.8125em auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.layout-half{
+	width:50%;
+}
+
+.align-right{
+	float:right;
+}
+
+.clearfix::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
