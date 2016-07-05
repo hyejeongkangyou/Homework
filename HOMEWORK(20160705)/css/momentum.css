@@ -1,0 +1,88 @@
+body{
+	margin:0;
+	height:100vh;
+	background: url("../images/momentum-image.jpg") no-repeat center center;
+	background-size: cover;
+	font-family: Helvetica;
+}
+
+[class$="-box"]{
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	background: hsla(0, 50%, 100%, 0.3);
+}
+
+.utility-box{
+	top:0;
+	left:0;
+	padding:15px 20px;
+}
+
+.utility-box p{
+	float:left;
+	font: 50px;
+}
+
+.utility-box .serch{
+	font: 50px;
+	top:70%;
+	background:transparent;
+	border:none;
+	outline:none;
+	float: right;
+	transform:translateY(50%);
+}
+
+.utility-box p::after{
+	position: relative;
+	left: 10%;
+	content: url(../images/search.svg);
+}
+
+
+.weather-box{
+	top:0;
+	right:0;
+}
+
+.weather-box img{
+
+}
+
+.todo-box{
+	bottom:0;
+	right:0;
+	text-align:center;
+	line-height:80px;
+}
+
+.info-box{
+	left:0;
+	bottom:0;
+}
+.quote-box{
+	bottom:0;
+	left:50%;
+	width:50%;
+	height:50px;
+	/*margin-left:-25%;*/
+	transform:translateX(-50%);
+}
+
+.clock-box{
+	width:50%;
+	bottom:40%;
+	height: 150px;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+.question-box{
+	width:50%;
+	bottom:25%;
+	height: 80px;
+	left:50%;
+	transform:translateX(-50%);
+
+}
