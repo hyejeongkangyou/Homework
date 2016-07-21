@@ -7,17 +7,17 @@ __________________________
  각 문단마다 2칸 들여쓰기를 한다. tab을 사용하지 말고, tab과 space를 혼용하여 사용하지 말 것
 
 2. 대소문자  
-	모든 코드는 소문자로 작성되어야 한다. HTML 요소의 이름, 속성, 속성값, CSS선택자,요소 및 요소값 모두에 이 규칙이 적용된다.
+    모든 코드는 소문자로 작성되어야 한다. HTML 요소의 이름, 속성, 속성값, CSS선택자,요소 및 요소값 모두에 이 규칙이 적용된다.
 
      ```html
         <!--Not recommended-->
-        	<A HREF="/">Home</A>
+            <A HREF="/">Home</A>
         
         <!--Recommended-->
         <img src="bird.png" alt="bird">
     ```
 3. 불필요한 공백 없애기  
-	불필요한 공백은 무의미한 것이고, 문제를 일으킬 수 있다.
+    불필요한 공백은 무의미한 것이고, 문제를 일으킬 수 있다.
 
 
 
@@ -75,78 +75,74 @@ class같이 따옴표가 필요한 속성의 경우, ' '(홑따옴표)보다는 
     * ID와 Class의 이름을 정의할 때, 그 목적이 명확히 나타날 수 있도록 네이밍한다. ID나 Class의 이름이 길어지더라도 명시적으로 정의하는 것을 권장한다.
 
     * 또한, 선택자를 작성할 때, 불필요한 부모 요소의 사용을 사용하지 않도록 한다.
-<<<<<<< HEAD
             
-=======
-			
->>>>>>> 5425c68460c6eed172bcf6f397833c83746b962c
      ```css
     /* Not recommended */
-	ul#example{}
-	div.error{}
+    ul#example{}
+    div.error{}
 
-	/* Recommended */
-	#example{}
-	.error{}
+    /* Recommended */
+    #example{}
+    .error{}
     ```
 
-<<<<<<< HEAD
     * ID와 Class의 이름을 정의할 때 띄어쓰기를 사용한다면 그 공백을 하이픈(-)을 사용하여 네이밍 한다.  
     문제가 생겼을 때 찾기 수월하고 이해가 더 간편하도록 하이픈을 사용하며, 하이픈 이외 단어나 공백 혹은 기호로 사용하지 않도록 한다.
-=======
-	* ID와 Class의 이름을 정의할 때 띄어쓰기를 사용한다면 그 공백을 하이픈(-)을 사용하여 네이밍 한다.  
-	문제가 생겼을 때 찾기 수월하고 이해가 더 간편하도록 하이픈을 사용하며, 하이픈 이외 단어나 공백 혹은 기호로 사용하지 않도록 한다.
->>>>>>> 5425c68460c6eed172bcf6f397833c83746b962c
 
 2. 속기 작성  
-	CSS는 속기형 작성을 지원한다. 속기 작성은 코드 효율성과 이해면에서 효과적이지만 명기적으로 표기하는 것을 권장한다.
+    CSS는 속기형 작성을 지원한다. 속기 작성은 코드 효율성과 이해면에서 효과적이지만 명기적으로 표기하는 것을 권장한다.
 
 3. 0 and Units  
-	0 뒤에는 px, percent 등등의 Units을 사용하지 않도록 한다.
+    0 뒤에는 px, percent 등등의 Units을 사용하지 않도록 한다.
     ```css
-    	margin: 0;
-    	padding: 0;
+        margin: 0;
+        padding: 0;
     ```
 
 4. Leading 0s  
-<<<<<<< HEAD
     소수점을 표현하는데 있어 -1과 1 사이의 값이나 길이 앞에 0을 쓰지 않는다.
-=======
-	소수점을 표현하는데 있어 -1과 1 사이의 값이나 길이 앞에 0을 쓰지 않는다.
->>>>>>> 5425c68460c6eed172bcf6f397833c83746b962c
     ```css
-    	 	font-size: .8em;
+            font-size: .8em;
     ```
 
 5. 따옴표  
-<<<<<<< HEAD
     HTML과 다르게 " "(쌍따옴표)보다는 ' '(홑따옴표)의 사용을 권장한다.  또한, url값에는 따옴표를 사용하지 않도록 한다.
 ```css
          /* Not recommended */
             @import url("//www.naver.com/css/media.css");
-=======
-	HTML과 다르게 " "(쌍따옴표)보다는 ' '(홑따옴표)의 사용을 권장한다.  또한, url값에는 따옴표를 사용하지 않도록 한다.
-```css
-	     /* Not recommended */
-			@import url("//www.naver.com/css/media.css");
->>>>>>> 5425c68460c6eed172bcf6f397833c83746b962c
 
-			html {
-			font-family: "open sans", arial, sans-serif;
-			}
+            html {
+            font-family: "open sans", arial, sans-serif;
+            }
 
-		/* recommended */
-			@import url(//www.naver.com/css/media.css);
+        /* recommended */
+            @import url(//www.naver.com/css/media.css);
 
-			html{
-				font-family: 'open sans', arial, sans-serif;
-			}
+            html{
+                font-family: 'open sans', arial, sans-serif;
+            }
 ```
+#### CSS 선언
 
-<<<<<<< HEAD
-#####CSS 선언
+- CSS 속성 선언 순서  
+    기억하기 쉽고 유지보수하기 쉽도록 코드를 알파벳 순서로 나열하도록 한다.  
+    그러나, multiple vendor-specific prefixes(ex)-moz-border-radius etc...)의 경우에는 차례대로 나열하도록 한다.
 
-- 선언 끝  
+    순서|속성|의미
+    ---|---|---
+    1| display|표
+    2|overflow|넘침
+    3|float|흐름
+    4|position|위치
+    5|z-index|정렬
+    6|width & height|크기
+    7|margin & padding|간격
+    8|border|보더
+    9|font|폰트
+    10|background|배경
+    11|etc(기타)|color,text-decoration,text-indent,clear...
+    
+ - 선언 끝  
     각각의 선언문들은 세미콜론(;)으로 끝을 내야 한다.
         
     ```css
@@ -162,43 +158,3 @@ class같이 따옴표가 필요한 속성의 경우, ' '(홑따옴표)보다는 
             height: 100px;
             }
     ```
-
-- CSS 속성 선언 순서  
-    기억하기 쉽고 유지보수하기 쉽도록 코드를 알파벳 순서로 나열하도록 한다.  
-    그러나, multiple vendor-specific prefixes(ex)-moz-border-radius etc...)의 경우에는 차례대로 나열하도록 한다.
-=======
-6. 선언 끝  
-	각각의 선언문들은 세미콜론(;)으로 끝을 내야 한다.
-		
-    ```css
-            /* Not recommended */
-    		.test{
-    		display:block;
-    		height: 100px
-    		}
-    
-    		/* Recommended */
-    		.test{
-    		display:block;
-    		height: 100px;
-    		}
-    ```
-
-7. CSS 속성 선언 순서  
-	기억하기 쉽고 유지보수하기 쉽도록 코드를 알파벳 순서로 나열하도록 한다.  
-	그러나, multiple vendor-specific prefixes(ex)-moz-border-radius etc...)의 경우에는 차례대로 나열하도록 한다.
->>>>>>> 5425c68460c6eed172bcf6f397833c83746b962c
-
-    순서|속성|의미
-    ---|---|---
-    1| display|표
-    2|overflow|넘침
-    3|float|흐름
-    4|position|위치
-    5|z-index|정렬
-    6|width & height|크기
-    7|margin & padding|간격
-    8|border|보더
-    9|font|폰트
-    10|background|배경
-    11|etc(기타)|color,text-decoration,text-indent,clear...
