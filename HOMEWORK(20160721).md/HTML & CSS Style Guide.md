@@ -142,7 +142,7 @@ class같이 따옴표가 필요한 속성의 경우, ' '(홑따옴표)보다는 
     10|background|배경
     11|etc(기타)|color,text-decoration,text-indent,clear...
     
- - 선언 끝  
+- 선언 끝  
     각각의 선언문들은 세미콜론(;)으로 끝을 내야 한다.
         
     ```css
